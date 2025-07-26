@@ -66,6 +66,15 @@ export default function Home() {
           </div>
         )}
 
+        {!loadingResumes && resumes.length > 0 && (
+          <Link
+            to="/wipe"
+            className="primary-button w-fit text-xl font-semibold"
+          >
+            Delete Resumes
+          </Link>
+        )}
+
         {!loadingResumes && resumes?.length === 0 && (
           <div className="flex flex-col items-center justify-center mt-10 gap-4">
             <Link

@@ -5,5 +5,6 @@ export default [
     route("/auth", "routes/auth.tsx"),
     route("/upload","routes/Upload.tsx"),
     route("/resume/:id","routes/resume.tsx"),
+    route("/wipe","routes/wipe.tsx")
 ] satisfies RouteConfig;
     
